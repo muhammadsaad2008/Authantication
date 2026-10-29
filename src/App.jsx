@@ -13,6 +13,15 @@ import { Show, SignInButton, SignUpButton, UserButton } from '@clerk/react'
           <UserButton />
         </Show>
       </header>
+      <main>
+        <Show when="signed-out">
+          <p>Please sign in to access the dashboard.</p>
+        </Show>
+        <Show when="signed-in">
+          <p>Welcome to your dashboard!</p>
+        </Show>
+      </main>
+      
     </div>
   )
   
